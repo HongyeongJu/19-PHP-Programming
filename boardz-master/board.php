@@ -1,6 +1,7 @@
 <!-- 구글 검색 : galley board css => CSS Only Pinterest-like Responsive Board Layout - Boardz.css | CSS ... -->
 <!-- 출처 : https://www.cssscript.com/css-pinterest-like-responsive-board-layout-boardz-css/ -->
 
+<!-- 작성자 : 홍영주 컴퓨터 공학부 학번 : 2014136137 -->
 <!-- select * from 테이블명 where title like "%su%"; -->
 <?php
     $connect = mysql_connect("localhost","hyj","1234");
