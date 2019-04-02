@@ -89,6 +89,8 @@ $records = mysql_num_rows($result);                 //select 쿼리를 처리한
                 }
                 echo "</ul>";
             }
+
+            mysql_close();              // mysql_close를 사용해서 DB사용을 종료한다.
             ?>
         </div>
     </div>
