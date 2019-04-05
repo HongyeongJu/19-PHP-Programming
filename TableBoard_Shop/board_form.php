@@ -7,7 +7,7 @@ if(isset($_GET[num])) {
 
     $sql = "select * from table_board where num=$_GET[num];";
 
-//    echo "$sql";
+    echo "$sql";
     $result = mysql_query($sql,$connect);
 }
 ?>
@@ -77,12 +77,12 @@ if(isset($_GET[num])) {
                                 mysql_close();
 
                                 ?>
-                                <td class="column1"> <input name="date" type="text" value="<? echo $date ?>" /> </td>
-                                <td class="column2"> <input name="order_id" type="number" value="<? echo $order_id ?>" /></td>
-                                <td class="column3"> <input name="name" type="text" value="<?  echo $name ?>" /> </td>
-                                <td class="column4"> <input name="price" type="number" placeholder="$" style="text-align: right;" value="$<? echo $price ?>" /> </td>
-                                <td class="column5"> <input name="quantity" type="number" value="<? echo $quantity ?>" style="text-align: right;" /> </td>
-                                <td class="column6"> $<span id="total"> <? echo $total ?> </span> </td>
+                                <td class="column1"> <input name="date" type="text" value="<? echo $date; ?>" /> </td>
+                                <td class="column2"> <input name="order_id" type="number" value="<? echo $order_id; ?>" /></td>
+                                <td class="column3"> <input name="name" type="text" value="<?  echo $name; ?>" /> </td>
+                                <td class="column4"> <input name="price" type="number" placeholder="$" style="text-align: right;" value="<? echo $price; ?>" /> </td>
+                                <td class="column5"> <input name="quantity" type="number" value="<? echo $quantity; ?>" style="text-align: right;" /> </td>
+                                <td class="column6"> $<span id="total"> <? echo $total; ?> </span> </td>
                                 <?php
                             } else {
                                 ?>
