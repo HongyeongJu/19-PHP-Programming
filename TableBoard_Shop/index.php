@@ -12,7 +12,7 @@ $records = mysql_num_rows($result);     // 행의 개수
 <!-- 출처 : https://colorlib.com/wp/template/responsive-table-v1/ -->
 <!DOCTYPE html>
 <html lang="en">
-<head>jm
+<head>
     <title>Table V01</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

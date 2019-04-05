@@ -7,7 +7,7 @@ if(isset($_GET[num])) {
 
     $sql = "select * from table_board where num=$_GET[num];";
 
-    echo "$sql";
+//    echo "$sql";
     $result = mysql_query($sql,$connect);
 }
 ?>
