@@ -24,7 +24,7 @@
 
 ## MySQL 테이블 생성!
 
-[여기에 테이블 생성 시, 사용한 Query 를 작성하세요.]
+
 Note: 
 - table 이름은 tableboard_shop 으로 생성
 - 기본키는 num 으로, 그 외의 속성은 board_form.php 의 input 태그 name 에 표시된 속성 이름으로 생성
@@ -57,7 +57,7 @@ Note:
       values ('2017-09-25 23:06' , 200392 ,'USB 3.0 Cable', 10.00 , 3);
     
 ## index.php 수정
-[여기에 index.php 를 어떻게 수정했는지, 설명을 작성하세요.]
+
  - mysql_connect() 함수를 사용해서 db 접속
  - mysql_select_db() 함수를 사용해서 db 선택
  - select sql 쿼리를 $sql 변수에 저장
@@ -70,6 +70,8 @@ Note:
 이 php 파일에서는 2가지 경우를 나누어서 생각한다.
 1. index.php 파일에서 GET형식으로 데이터를 받았을 경우 (update, delete로 분기)
 2. index.php 파일에서 GET형식으로 데이터를 받지 않았을 경우(insert 로 분기)
+
+-----
 
 
 1. index.php 파일에서 GET형식으로 데이터를 받았을 경우
@@ -88,7 +90,7 @@ Note:
     - insert버튼을 만들고 이것을 눌렀을 시엔 insert.php로 post 값을 넘겨주어 처리할 수 있도록 만든다.
 ## function
 ### insert.php 수정
-[여기에 insert.php 를 어떻게 수정했는지, 설명을 작성하세요.]
+
 board_form.php에 받아온 POST 데이터를 이용해서 sql 문을 작성 그리고 mysql에 데이터를 넣으면 된다.
  -  mysql_connect()함수를 이용해서 mysql에 접속한다.
  - mysql_select_db() 함수를 이용해서 db를 선택한다.
@@ -101,7 +103,7 @@ board_form.php에 받아온 POST 데이터를 이용해서 sql 문을 작성 그
  - 만약 쿼리가 처리가 안됬을시엔 실패했다고 알린다.
  - location.replace()함수를 이용해서 index.php 파일로 바로 이동한다.
 ### update.php 수정
-[여기에 update.php 를 어떻게 수정했는지, 설명을 작성하세요.]
+
 board_form.php에서 받아온 GET 데이터(num)값을 이용해 어떤 데이터를 수정해야되는지 식별하고 $_POST 값을 이용해서 board_form.php 파일에서 받은
 POST 값으로 데이터베이스의 값을 수정한다.
 
@@ -116,7 +118,7 @@ POST 값으로 데이터베이스의 값을 수정한다.
 - location.replace()함수를 이용해서 index.php로 바로 이동한다.
     
 ### delete.php 수정
-[여기에 delete.php 를 어떻게 수정했는지, 설명을 작성하세요.]
+
 board_form.php에서 받아온 GET 데이터(num)값을 이용해서 db에 접속해서 데이터를 삭제한다.
 
    - mysql_connect() 함수를 이용해서 mysql에 접속한다.
