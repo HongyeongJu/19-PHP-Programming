@@ -11,7 +11,7 @@ $connect = mysql_connect("localhost","hyj","1234");
 $db_con = mysql_select_db("hyj_db", $connect);
 
 
-$sql = "update table_board set date ='$_POST[date]' , order_id = '$_POST[order_id]' , name = '$_POST[name]' , price = '$_POST[price]' , quantity = '$_POST[quantity]'
+$sql = "update tableboard_shop set date ='$_POST[date]' , order_id = '$_POST[order_id]' , name = '$_POST[name]' , price = '$_POST[price]' , quantity = '$_POST[quantity]'
 where num = '$_GET[num]';";
 
 echo $sql;

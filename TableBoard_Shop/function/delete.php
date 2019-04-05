@@ -11,9 +11,9 @@
 $connect = mysql_connect("localhost","hyj","1234");
 $db_con = mysql_select_db("hyj_db", $connect);
 
-$sql = "delete from table_board ".
+$sql = "delete from tableboard_shop ".
     "where num = $_GET[num];";
-echo $sql;
+// echo $sql;
 
 $result = mysql_query($sql,$connect);
 

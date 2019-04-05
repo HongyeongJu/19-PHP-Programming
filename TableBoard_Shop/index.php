@@ -3,9 +3,8 @@
 $connect = mysql_connect("localhost","hyj","1234");
 $db_con = mysql_select_db("hyj_db", $connect);
 
-$sql = "select num, date_format(date, '%Y-%m-%d %T') as date, order_id, name, price, quantity from table_board;";
+$sql = "select num, date_format(date, '%Y-%m-%d %T') as date, order_id, name, price, quantity from tableboard_shop;";
 $result = mysql_query($sql,$connect);
-$records = mysql_num_rows($result);     // 행의 개수
 
 ?>
 

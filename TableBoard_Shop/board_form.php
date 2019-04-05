@@ -5,9 +5,9 @@ if(isset($_GET[num])) {
     $connect = mysql_connect("localhost","hyj","1234");
     $db_con = mysql_select_db("hyj_db", $connect);
 
-    $sql = "select * from table_board where num=$_GET[num];";
+    $sql = "select * from tableboard_shop  where num=$_GET[num];";
 
-    echo "$sql";
+   // echo "$sql";
     $result = mysql_query($sql,$connect);
 }
 ?>
@@ -43,7 +43,7 @@ if(isset($_GET[num])) {
 		<div class="wrap-table100">
 			<a href="index.php" style="border: 1px; padding: 10px; background: #36304a; display: block; width: 100px; text-align: center; border-radius: 10px; margin-bottom: 5px;"> Back </a>
             <?php
-                if(isset($_GET[num])) {
+                if(isset($_GET[num])) {         // $_GET[num] 값이 있는가?
                     echo "<form method=\"POST\" action=\"function/update.php?num=$_GET[num]\">";
                 } else {
                     echo "<form method=\"POST\" action=\"function/insert.php\">";

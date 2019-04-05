@@ -12,7 +12,7 @@
 $connect = mysql_connect("localhost","hyj","1234");
 $db_con = mysql_select_db("hyj_db", $connect);
 
-$sql = "insert into table_board (date, order_id, name, price, quantity)".
+$sql = "insert into tableboard_shop (date, order_id, name, price, quantity)".
     "values ('$_POST[date]' , $_POST[order_id] ,'$_POST[name]', $_POST[price] , $_POST[quantity]);";
 
 
